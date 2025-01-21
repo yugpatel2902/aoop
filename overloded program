@@ -1,0 +1,28 @@
+public class Shape {
+    
+    // Method to calculate the area of a circle
+    public float area(float radius) {
+        return 3.14f * radius * radius; // Formula for the area of a circle: πr^2
+    }
+
+    // Method to calculate the area of a rectangle
+    public float area(float length, float width) {
+        return length * width; // Formula for the area of a rectangle: length * width
+    }
+
+    public static void main(String[] args) {
+        // Create an object of the Shape class
+        Shape shape = new Shape();
+        
+        // Calculate and display the area of the circle
+        float circleRadius = 5.0f;
+        float circleArea = shape.area(circleRadius);
+        System.out.println("Area of the circle with radius " + circleRadius + " is: " + circleArea);
+
+        // Calculate and display the area of the rectangle
+        float rectangleLength = 4.0f;
+        float rectangleWidth = 6.0f;
+        float rectangleArea = shape.area(rectangleLength, rectangleWidth);
+        System.out.println("Area of the rectangle with length " + rectangleLength + " and width " + rectangleWidth + " is: " + rectangleArea);
+    }
+}
